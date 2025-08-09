@@ -1,5 +1,12 @@
-body{
+* {
+    box-sizing: border-box;
+    padding: 0;
     margin: 0;
+    font-family: Arial, sans-serif;
+    /* color: white; */
+}
+
+body{
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -7,12 +14,22 @@ body{
 }
 
 header{
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    margin: auto;
+    height: 5rem;
+    background-color: brown;
+    text-align: center;
+    color: white;
+}
+
+a {
+    color: white;
 }
 
 #title{
-    font-family: Arial, sans-serif;
     text-align: center;
     font-size: 2rem;
 }
@@ -59,12 +76,36 @@ button{
 
 }
 
-@media only screen and (max-width: 412px){
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.5rem;
+}
 
-    header{
-        width: auto;
+.faq > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 50px;
+}
+
+
+@media only screen and (max-width: 900px){
+
+    #title {
+        font-size: 1rem;
     }
-    
+
+    #link {
+        font-size: 1rem;
+    }
+
+    .faq {
+        font-size: 1rem;
+    }
+
     button {
         width: 55px;
         height: 55px;
